@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TGIF</title>
+		<link rel="icon" href="http://example.com/favicon.png">
+		<meta charset="utf-8">
+		<!-- reset presets CSS -->
+		<link rel="stylesheet" href="z_styles/reset.css">
+		<!-- Font awesome -->
+		<script src="https://use.fontawesome.com/115b4f3919.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="z_styles/style.css">
+
+	</head>
+
+	<body data-page = "Attendance">
+		<header>
+			<h1>TGIF CONGRESS 113</h1>
+			<div class="logoSpace">
+				<a href="index.html"><img src="images/logoTGIF.png"></a>
+				<p>CONGRESS 113</p>
+			</div>
+		</header>
+		<div class="sticky menuNav">
+			<nav>
+				<div class="container-fluid paddingL0">
+					<div class="col-md-10">
+						<ul class="nav navbar-nav">
+
+							<li><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">Congress 113<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="dropNav" href="senate-page.html">Senate</a></li>
+									<li><a class="dropNav" href="house-page.html">House</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle aActiveDrop2" data-toggle="dropdown">Attendance<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="dropNav aActiveDrop">Senate</a></li>
+									<li><a class="dropNav" href="attendance_house.html">House</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">Party Loyalty<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="dropNav"href="partyLoyalty_senate.html">Senate</a></li>
+									<li><a class="dropNav"href="partyLoyalty_house.html">House</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2 emailNav">
+						<ul>
+							<li>
+								<a href="mailto:info@tgif.net?Subject=Hello"><i class="fa fa-envelope-o fa-lg fa-2x" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="mainContainer">
+			<div>
+				<div>
+					<h2>Attendance SENATE</h2>
+					<p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+					<p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+					<div class="tablescontainer">
+
+						<div class="container flex-container">
+							<div class="miniTable col-md-4 backGGrey">
+								<h2>Senate at a glance</h2>
+								<table class="table" id="firstTable">
+									<thead>
+										<tr>
+											<th>Party</th>
+											<th>Number of Reps</th>
+											<th>% Voted <br>with Prty</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr id="tdRep">
+											<td>Republican</td>
+										</tr>
+										<tr id="tdDem">
+											<td>Democrat</td>
+										</tr>
+										<tr id="tdInd">
+											<td>Independent</td>
+										</tr>
+										<tr id="tdTotal">
+											<td><strong>Total</strong></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="container flex-container">
+							<div class="miniTable col-md-5 backGGrey">
+								<h2>Least Engaged<br>(Bottom 10% Attendance)</h2>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Number of Missed Votes</th>
+											<th>% Missed</th>
+										</tr>
+									</thead>
+									<tbody id="secondTable">
+
+									</tbody>
+								</table>
+							</div>
+
+							<div class="miniTable col-md-5 backGGrey">
+								<h2>Most Engaged<br>(Top 10% Attendance)</h2>
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Number of Missed Votes</th>
+											<th>% Missed</th>
+										</tr>
+									</thead>
+									<tbody id="thirdTable">
+
+									</tbody>
+								</table>
+							</div>    
+						</div>
+					</div>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+		</div>
+		<footer>
+			<div>
+				<a href="https://www.facebook.com/"><img class= "logorrss" src="Logos/Facebook.png"></a>
+				<a href="https://www.twitter.com/"><img class= "logorrss" src="Logos/twitter.png"></a>
+				<a href="https://www.instagram.com/"><img class= "logorrss" src="Logos/instagram.png"></a>
+				<p>&copy; 2016 TGIF | All Rights Reserved</p>
+			</div>
+		</footer>
+
+		<script src="z_Js/pro-congress-113-senate.js"></script>
+		<script src="z_Js/statistics.js"></script>
+		<script src="z_Js/sticky.js"></script>
+
+	</body>
+</html>

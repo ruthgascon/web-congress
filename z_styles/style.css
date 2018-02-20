@@ -1,0 +1,350 @@
+.mainContainer{
+	padding: 0;
+	min-height: 500px;
+	width: 90%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.mainImage {
+	background-image: url(../images/Capitol_at_Dusk.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center -80px;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+}
+
+header {
+	height: 180px;
+	background-color: white;
+}
+
+.logoSpace{
+	text-align: center;
+	padding-top: 25px;
+}
+
+.logoSpace img {
+	height: 100px;
+}
+
+.logoSpace img:hover {
+	opacity: 0.8;
+}
+
+.logoSpace p {
+	color: darkslategrey;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.logoSpace p:hover {
+	opacity: 0.8;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.tablescontainer {
+	text-align: center;
+}
+
+.spaceForTable {
+	width: 50%;
+	margin: auto;
+}
+
+footer {
+	text-align: center;
+	padding-top: 40px;
+	height: 150px;
+	background-color: #333132;
+	box-shadow: -1px -1px 2px rgba(0, 0, 0, .5);
+}
+
+footer p {
+	color: grey;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.logorrss {
+	padding-right: 10px;
+	width: 40px;
+	filter: grayscale(100%);
+}
+
+/*NAVIGATION BAR*/
+.menuNav {
+	background-color: #333132;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.fixed {
+	position: fixed;
+	top:0; left:0;
+	width: 100%;
+	background-color: #333132;
+	z-index: 99;
+}
+
+nav a {
+	color: #777 !important;
+}
+
+.aActive {
+	font-weight: bold !important;
+	color: white !important;
+	text-decoration: underline !important;
+}
+
+.aActive:hover {
+	background-color: transparent !important;
+	font-weight: bold !important;
+	text-decoration: underline !important;
+	color: white !important;
+}
+
+.aActiveDrop{
+	background-color: transparent !important;
+	font-weight: bold !important;
+	text-decoration: underline !important;
+}
+
+.aActiveDrop:hover {
+	background-color: transparent !important;
+	font-weight: bold !important;
+	text-decoration: underline !important;
+}
+
+.aActiveDrop2 {
+	font-weight: bold !important;
+	text-decoration: underline !important;
+	color: white !important;
+}
+
+.aActiveDrop2:hover {
+	text-decoration: none !important;
+}
+
+.dropNav a {
+	color: purple !important;
+}
+
+.navbar-nav a:not(dropNav a) {
+	color: white !important;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+}
+
+.navbar-nav a:hover:not(.aActive) {
+	color: grey !important;
+}
+
+.emailNav li{
+	text-align: right;
+	font-family: 'PT Sans', sans-serif !important;
+	padding-top: 15px;
+}
+
+.emailNav a {
+	color: grey;
+}
+
+.emailNav a:hover {
+	color: white !important;
+}
+/*TABLES SETTINGS*/
+
+.table th:first-child{
+	text-align: left;
+	width: 1px;
+}
+.table th:last-child{
+	text-align: right;
+}
+
+.table th {
+	text-align: center;
+	font-weight: bold;
+}
+
+.table td:first-child{
+	text-align: left;
+	width: 30px;
+}
+
+.table td:last-child{
+	text-align: right;
+}
+
+.miniTable {
+	margin: 30px 20px 0 20px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+
+/*SPECIFIC BOX HOME*/
+
+.buttonsHome {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.buttonsHome button {
+	border-radius: 5px;
+	border: 2px solid grey;
+	background-color: lightgray;
+	width: 100px;
+}
+
+.buttonsHome button:hover {
+	background-color: white;
+}
+
+.buttonHide{
+	display: none;
+}
+
+.transbox {
+	background-color:  rgba(0, 0, 0, 0.2);
+}
+
+/*FILTERS (checkbox, searching...*/
+
+.spaceFilters {
+	width:100%;
+	margin: 50px 0 20px 0;
+}
+
+.filter1 {
+	padding-left: 0;
+}
+
+.filter2 {
+	text-align: center;
+}
+
+.filter2 label {
+	padding-right: 2px;
+}
+
+.filter3 {
+	text-align: right;
+	padding-right: 0;
+}
+
+/*CHARGING TABLE SYMBOLS*/
+.loader {
+	border: 5px solid #f3f3f3; /* Light grey */
+	border-top: 5px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 2s linear infinite;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.loading {
+	margin: auto;
+	margin-top: 100px;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.tableLoading {
+	display: none;
+}
+
+.fail {
+	display: none;
+}
+
+.fa-exclamation-triangle {
+	margin: auto;
+	margin-top: 100px;
+	color: #ffc34d;
+}
+
+/*BOTON SCROLL TOP*/
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 350px;
+	right: 15px;
+	z-index: 98;
+	border: none;
+	outline: none;
+	background-color: #333132;
+	color: white;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+	border-radius: 50px;
+}
+
+#myBtn:hover {
+	background-color: #555;
+}
+
+/*GENERAL SETTINGS*/
+.white {
+	color:white;
+	padding: 20px 20px 20px 20px;
+}
+
+p {
+	line-height: 30px;
+}
+
+.height120 {
+	height: 120px;
+	width: 100%;
+}
+
+.paddingL0 {
+	padding-left: 0 !important;
+}
+
+.paddingR0 {
+	padding-right: 0 ;
+}
+
+.textAR {
+	text-align: right;
+}
+
+.centeredT{
+	text-align: center;
+}
+
+.rightAlignT {
+	text-align: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+h3 {
+	color: white;
+}
